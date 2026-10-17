@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website-i im i parë online!</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f0ff;
+            color: #292344;
+            text-align: center;
+        }
+
+        header {
+            background: #6554c0;
+            color: white;
+            padding: 35px 15px;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 35px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 4px 15px #00000015;
+        }
+
+        h2 {
+            color: #6554c0;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        button {
+            background: #6554c0;
+            color: white;
+            border: none;
+            padding: 13px 22px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #48369b;
+        }
+
+        #mesazhi {
+            font-weight: bold;
+            color: #6554c0;
+        }
+
+        footer {
+            padding: 20px;
+            color: #6554c0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mirë se vini në faqen time!</h1>
+        <p>Website-i im i parë online!</p>
+    </header>
+
+    <main>
+        <h2>Prezantimi im personal</h2>
+
+        <p>
+            Përshëndetje! Kjo është faqja ime e parë
+            e internetit, të cilën po e krijoj duke
+            mësuar programimin.
+        </p>
+
+        <h2>Qëllimi im</h2>
+
+        <p>
+            Dua të mësoj HTML, CSS dhe JavaScript
+            dhe të krijoj faqe të bukura dhe funksionale.
+        </p>
+
+        <button onclick="shfaqMesazhin()">
+            Kliko këtu!
+        </button>
+
+        <p id="mesazhi"></p>
+    </main>
+
+    <footer>
+        <p>Faqja ime e parë | 2026</p>
+    </footer>
+
+    <script>
+        function shfaqMesazhin() {
+            document.getElementById("mesazhi").textContent =
+                "Urime! Butoni im po funksionon!";
+        }
+    </script>
+
+</body>
+</html>
